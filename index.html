@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<head>
+    <title>Fikuart holding page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="feistyduck.css">
+</head>
+
+<body>
+
+<div id="http_banner" class="errorBanner" style="display: none">
+    This page has been delivered over HTTP, without encryption.
+</div>
+
+<script>
+    // Show warning message if this page is accessed over plaintext HTTP.
+    if (window.location.protocol != "https:") {
+        document.getElementById('http_banner').style.display = 'block';
+    }
+</script>
+
+<section>
+
+    <div class="content">
+
+        <h1>Welcome to<br>The Temporary Holding Page<br>for testing purposes</h1>
+
+        <div class="info cf">
+
+            <img src="robot.png" width="535" height="600" alt="random image not selected yet">
+
+            <div class="indent">
+                <p class="large">This is a basic page for testing functions.<a href="https://www.fikuart.com">Same page redirect</a>.
+                    Enjoy!</p>
+                <p>Your IP address is: <b><!--#echo var="REMOTE_ADDR" --></b></p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+    <div class="content">
+
+        <a href="https://www.fikuart.com"><img class="logo" src="another_random_image.png"></a>
+
+        <p>
+            <a href="mailto:miek@fikuart.com"><img class="icon" src="icon-email.png">miek@fikuart.com</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="https://www.twitter.com/miekfikuart"><img class="icon" src="icon-twitter.png">@miekfikuart</a>
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
